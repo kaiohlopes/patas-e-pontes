@@ -1,27 +1,8 @@
-<!DOCTYPE html>
-
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto acadêmico da ONG Patas & Pontes">
-    <title>Patas & Pontes - Cadastro</title>
-</head>
-<body>
-    <header>
-        <h1>Patas e Pontes</h1>
-        <p>A Patas & Pontes conecta pessoas apaixonadas pela causa animal a ações que transformam vidas. Cadastre-se e faça parte da nossa rede de apoio aos animais resgatados.</p>
-    </header>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="cadastro.html">Cadastro</a>
-    </nav>
-    <main>
-        <section>
+<section>
             <h2>Cadastro de Voluntários</h2>
             <p>Preencha o formulário abaixo para fazer parte da Patas & Pontes e contribuir com nossas ações de resgate, cuidado e adoção responsável de animais.</p>
         </section>
-        <div><h2>Cadastro de Voluntários</h2></div>
+        <div><h3>Formulário de Inscrição</h3></div>
         
         <form action="">
         
@@ -30,10 +11,13 @@
                 Dados do voluntário
             </legend>
         <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome" required><br><br>
+        <input type="text" id="nome" name="nome" required
+        placeholder="Digite seu Nome"
+        ><br><br>
         
         <label for="datadenascimento">Data</label>
-        <input type="date" id="datadenascimento" name="data de nascimento" required><br><br>
+        <input type="date" id="datadenascimento" name="data de nascimento" required
+        ><br><br>
 
         <label for="cpf">Digite seu cpf</label>
         <input 
@@ -65,18 +49,20 @@
         maxlength="9"
         required>
 
+        <!--componente de feedback-->
+
+        <div class="alerta">
+           Cadastro Realizado Com Sucesso
+        </div>
+        <div class="toast">
+            Novo Voluntário Registrado
+        </div>
+        <span class="badge">
+            Disponível
+        </span>
+
        <br><br><button>
         cadastrar
        </button>
        </fieldset>
        </form>
-    </main>
-    <footer>
-        <h3>
-            Contato
-        </h3>
-        <div>Patas & Pontes</div>
-        Contato: contato@patasepontes.org.br
-    </footer>
-</body>
-</html>
